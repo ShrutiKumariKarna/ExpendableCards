@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:100%;
+    width:100%;
+}
+
+.maindiv{
+    margin:30px;
+    display:flex;
+}
+
+.card{
+    margin:10px;
+    height:480px;
+    width:80px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50px;
+    transition: width 0.6s ease-in-out;
+}
+
+/* By-default 1st card's width */
+.activecard{
+    width:700px;
+}
+.card img{
+    height: 480px;
+}
+
+h2{
+    position:relative;
+    bottom:50px;
+    left:20px;
+    color:#fff;
+    display:none;
+}
+
+
+/* by-default 1st card's h2 content  */
+.activecard h2 {
+    display: block;
+}
